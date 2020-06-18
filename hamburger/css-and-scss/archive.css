@@ -5,11 +5,12 @@
 }
 
 #archive {
-  width: 375px;
+  width: 100vw;
+  background-color: #FFFDFA;
 }
 
 #archive .wrapper {
-  width: 375px;
+  width: 100vw;
 }
 
 #archive header {
@@ -50,16 +51,17 @@
 
 #archive header .background-img h2 {
   padding-top: 110px;
-  padding-left: 30px;
+  padding-left: 7%;
   color: #fff;
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 9.5vw;
 }
 
 #archive header .background-img p {
   color: #fff;
-  padding-left: 30px;
+  padding-left: 7%;
   padding-top: 5px;
+  font-size: 4vw;
 }
 
 #archive header .search_container .fontawesome {
@@ -71,7 +73,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.55rem;
-  margin-left: 22px;
+  margin-left: 6%;
   margin-top: 40px;
 }
 
@@ -80,7 +82,7 @@
   padding: 3px 10px;
   border-radius: 10px;
   height: 2.8rem;
-  width: 230px;
+  width: 61%;
   overflow: hidden;
   background-color: #fff;
 }
@@ -99,13 +101,13 @@
   border-radius: 10px;
   color: #707070;
   outline: none;
-  width: 80px;
+  width: 22%;
   height: 2.8rem;
   margin-left: 20px;
   display: inline-block;
   position: absolute;
   top: 121px;
-  left: 245px;
+  left: 66%;
 }
 
 #archive .archive-content {
@@ -122,14 +124,14 @@
 
 #archive .archive-content section h2 {
   font-weight: 300;
-  font-size: 1.70rem;
-  margin-left: 20px;
-  padding-top: 28px;
+  font-size: 7vw;
+  margin-left: 6%;
+  padding-top: 7.5%;
 }
 
 #archive .archive-content section p {
-  width: 350px;
-  margin-left: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
   padding-top: 25px;
   padding-bottom: 30px;
   font-weight: 300;
@@ -141,29 +143,31 @@
 }
 
 #archive .archive-content .sub-content-area img {
-  height: 235px;
-  margin-left: 17px;
+  width: 91%;
+  margin-left: 4.6%;
+  margin-right: 4.6%;
 }
 
 #archive .archive-content .sub-content-area .sub-content-info {
   background-color: #3C2B1C;
   height: 355px;
-  width: 342px;
   margin-top: -7px;
-  margin-left: 17px;
+  margin-left: 4.6%;
+  margin-right: 4.6%;
 }
 
 #archive .archive-content .sub-content-area .sub-content-info h2 {
-  font-size: 1.25rem;
+  font-size: 6vw;
 }
 
 #archive .archive-content .sub-content-area .sub-content-info p {
   padding-bottom: 0px;
-  width: 250px;
+  width: 74%;
+  line-height: 7vw;
 }
 
 #archive .archive-content .sub-content-area .sub-content-info p:nth-child(3) {
-  padding-top: 0px;
+  padding-top: 2px;
 }
 
 #archive .archive-content .sub-content-area .sub-content-info a {
@@ -173,14 +177,14 @@
   display: block;
   width: 160px;
   padding: 10px 0px;
-  margin: 50px auto;
+  margin: 40px auto;
   border-radius: 40px;
 }
 
 #archive .archive-content .paging-area {
   height: 115px;
-  margin-left: 18px;
-  width: 342px;
+  margin-left: 5%;
+  margin-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
