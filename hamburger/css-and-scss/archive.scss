@@ -1,0 +1,242 @@
+// ここからarchiveページ　　　　　　　　　　　　　　　　　　　　　　　　
+@charset "UTF-8";
+@font-face{ 
+  font-family: 'mplus-1m-thin';
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.ttf') format('truetype');
+}
+@mixin align-center($margin: 0px){
+  display:block;
+  margin: $margin auto;
+}
+
+@mixin button($margin: 0px) {
+          background-color:#fff;
+          color:$gray-color;
+          text-align:center;
+          display:block;
+          width:160px;
+          padding: 10px 0px;
+          margin:$margin auto;
+          border-radius:40px;
+}
+
+$gray-color:#707070;
+$base-color:#FFF7EF;
+$font-M:'M PLUS 1p', sans-serif;
+$font-R:'Roboto', sans-serif;
+$back-color:#FFFDFA;
+$shadow-color-bold:rgba(0,0,0,.6);
+$shadow-color:rgba(0,0,0,.5);
+$shadow-color-thin:rgba(0,0,0,.4);
+$brown-color:#3C2B1C;
+$font-color:#3C2A10;
+
+#archive {
+  width:375px;
+
+  .wrapper {
+    width: 375px;
+  }
+  
+  header {
+    background-color: $base-color;
+
+    nav {
+      text-align: right;
+      padding-top: 10px;
+
+      a {
+        padding-right: 15px;
+        color: $gray-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 2.5rem;
+    }
+
+    .background-img {
+      height: 285px;
+      background-image: url("images/iPhone/archive-bg1.png");
+      background-repeat:no-repeat;
+      background-position:top -748px left 0px;
+      margin-top:44px;
+
+    .background-shadow {
+      height: 285px;
+      background-color:$shadow-color;
+    }
+
+
+      h2 {
+        padding-top: 110px;
+        padding-left: 30px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 2.25rem;
+
+      }
+      p {
+        color:#fff;
+        padding-left:30px;
+        padding-top:5px;
+      }
+    }
+
+    .search_container {
+
+      .fontawesome {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 0.8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 1.55rem;
+        margin-left:22px;
+        margin-top:40px;
+      }
+
+      input[type="text"] {
+        border: 1px solid rgb(54, 53, 53);
+        padding: 3px 10px;
+        border-radius: 10px;
+        height: 2.8rem;
+        width:230px;
+        overflow: hidden;
+        background-color:#fff;
+      }
+
+      input[type="text"]:focus {
+        outline: 0;
+        height: 2.8rem;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        font-family: FontAwesome;
+        font-size: 1rem;
+        background: #F2EDE9;
+        border: 1px solid rgb(54, 53, 53);
+        border-radius: 10px;
+        color: $gray-color;
+        outline: none;
+        width: 80px;
+        height: 2.8rem;
+        margin-left:20px;
+        display: inline-block;
+        position: absolute;
+        top: 121px;
+        left: 245px;
+      }
+
+    }// .search_containerのカッコ
+
+  }// headerのカッコ
+  .archive-content {
+    background-color:$back-color;
+    
+    section:nth-child(n+3) {
+      padding-top:20px;
+    }
+
+    section{
+      font-family: $font-M;
+    
+      h2 {
+        font-weight:300;
+        font-size:1.70rem;
+        margin-left:20px;
+        padding-top:28px; 
+      }
+      p {
+        width:350px;
+        margin-left:20px;
+        padding-top:25px;
+        padding-bottom:30px;
+        font-weight:300;
+        line-height:1.70rem;
+      }
+
+    }// sectionのかっっこ
+
+    .sub-content-area {
+      color:#fff;
+      img {
+        height:235px;
+        margin-left:17px;
+      }
+    
+      .sub-content-info {
+        background-color:$brown-color;
+        height:355px;
+        width:342px;
+        margin-top:-7px;
+        margin-left:17px;
+
+        h2{
+          font-size:1.25rem;
+        }
+        p {
+          padding-bottom:0px;
+          width:250px;
+        }
+        p:nth-child(3) {
+          padding-top:0px;
+        }
+      
+        a {
+         @include button(50px);
+        }
+      }// .sub-content-infoのカッコ
+    
+    }// .sub-content-areaのカッコ
+
+    .paging-area {
+      height:115px;
+      margin-left:18px;
+      width:342px;
+      display:flex;
+      justify-content:space-between;
+
+      div {
+        margin-top: 64px;
+        margin-bottom: 27px;
+        
+        a{
+          display:flex;
+
+          img {
+            width: 19px;
+            height: 19px;
+            margin-top: 3px;
+          }
+          p {
+            color:$gray-color;
+          }
+
+          .left {
+            margin-left:5px;
+          }
+
+          .right {
+            margin-right:5px;
+          }
+        }
+      }
+     
+    
+    }// paging-areaのカッコ
+
+  }// archive-contentのカッコ
+
+}// ＃archiveのカッコ

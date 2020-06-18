@@ -1,0 +1,392 @@
+// ここからsingle-page　　　　　　　　
+@charset "UTF-8";
+@font-face{ 
+  font-family: 'mplus-1m-thin';
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-thin.ttf') format('truetype');
+}
+@mixin align-center($margin: 0px){
+  display:block;
+  margin: $margin auto;
+}
+
+@mixin button($margin: 0px) {
+          background-color:#fff;
+          color:$gray-color;
+          text-align:center;
+          display:block;
+          width:160px;
+          padding: 10px 0px;
+          margin:$margin auto;
+          border-radius:40px;
+}
+
+$gray-color:#707070;
+$base-color:#FFF7EF;
+$font-M:'M PLUS 1p', sans-serif;
+$font-R:'Roboto', sans-serif;
+$back-color:#FFFDFA;
+$shadow-color-bold:rgba(0,0,0,.6);
+$shadow-color:rgba(0,0,0,.5);
+$shadow-color-thin:rgba(0,0,0,.4);
+$brown-color:#3C2B1C;
+$font-color:#3C2A10;
+
+// ここからsingle-page　　　　　　　　
+
+
+#single {
+  width: 100vw;
+  background-color: $back-color;
+  color: $font-color;
+
+  #nav-open {
+    top: -426px;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  header {
+    background-color: $base-color;
+
+    nav {
+      text-align: right;
+      padding-top: 10px;
+
+      a {
+        padding-right: 15px;
+        color: $gray-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 2.5rem;
+    }
+
+    .background-img {
+      height: 226px;
+      background-image: url("images/iPhone/single-bg1.png");
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position:center center;
+      margin-top: 44px;
+
+
+
+      h2 {
+        padding-top: 80px;
+        padding-left: 11%;
+        color: #fff;
+        font-weight: normal;
+        font-size: 9.5vw;
+
+      }
+
+      p {
+        color: #fff;
+        padding-left: 30px;
+        padding-top: 5px;
+      }
+    }
+
+    .search_container {
+
+      .fontawesome {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 0.8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 1.55rem;
+        margin-left: 6%;
+        margin-top: 40px;
+      }
+
+      input[type="text"] {
+        border: 1px solid rgb(54, 53, 53);
+        padding: 3px 10px;
+        border-radius: 10px;
+        height: 2.8rem;
+        width: 61%;
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      input[type="text"]:focus {
+        outline: 0;
+        height: 2.8rem;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        font-family: FontAwesome;
+        font-size: 1rem;
+        background: #F2EDE9;
+        border: 1px solid rgb(54, 53, 53);
+        border-radius: 10px;
+        color: $gray-color;
+        outline: none;
+        width: 22%;
+        height: 2.8rem;
+        margin-left: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 121px;
+        left: 66%;
+      }
+
+    }
+
+    // .search_containerのカッコ
+
+  }
+
+  // headerのカッコ
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .narrow-wrapper {
+    margin-right:6%;
+    margin-left:6%;
+  }
+
+  article {
+    margin-top: 30px;
+    color: $font-color;
+
+    div {
+      margin-left: 20px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.75rem;
+    }
+
+    p {
+      margin-top: 20px;
+      line-height: 1.7rem;
+    }
+
+    .ttl-area {
+      h3 {
+        margin-top: 38px;
+        margin-bottom: 25px;
+        font-weight: normal;
+        font-size: 1.5rem;
+      }
+
+      h4 {
+        margin-bottom: 25px;
+        font-weight: normal;
+        font-size: 1.25rem
+      }
+    }
+
+    //  ttl-areaのカッコ
+  }
+
+  // articleのカッコ
+
+  blockquote {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #F5F5F5;
+
+    p:first-child {
+      padding-top: 25px;
+      margin-left: 6%;
+      margin-right:6%;
+      line-height: 1.7rem;
+    }
+
+    p:last-child {
+      margin-left: 20px;
+      margin-top: 30px;
+      padding-bottom: 30px;
+
+      small {
+        text-decoration: underline;
+        color: rgb(2, 115, 134);
+        font-size: 0.1rem;
+        padding-left: 10px;
+      }
+
+    }
+
+  }
+
+  // blockquoteのカッコ
+
+  .main-content {
+    img:first-child{
+      width:100%;
+    }
+
+    .main-content-flex {
+      margin-top: 9%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        height: 25%;
+        width:36%;
+        margin-top:2%;
+    
+      }
+      p {
+        padding-left: 8%;
+        line-height: 7.5vw;
+      }
+
+      p:first-child {
+        padding-left:0;
+        padding-right: 8%;
+      }
+
+    }
+
+  }
+
+  // main-contentのカッコ
+  .sub-content {
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-right:6%;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    img:first-child {
+      width: 81%;
+      height: auto;
+      margin-left: 10%;
+      margin-right:10%;
+      margin-bottom: 28px;
+    }
+
+
+    .list-area {
+      margin-left: 19px;
+      margin-top: 10px;
+
+      .first-list ul {
+        list-style-type: decimal;
+        margin-bottom: 20px;
+      }
+
+      .first-list ul:nth-child(2) {
+        margin-left: 20px;
+      }
+
+      .second-list {
+        margin-top: 50px;
+      }
+
+      .second-list ul {
+        list-style: none;
+        margin-left: -19px;
+        margin-bottom: 20px;
+      }
+
+      .second-list ul:nth-child(2) {
+        margin-left: 0px;
+      }
+
+
+    }
+
+    // list-areaのカッコ
+
+    p {
+      background-color: #F5F5F5;
+      width: 100%;
+      padding-left: 50px;
+      padding-top: 50px;
+      padding-bottom: 80px;
+
+      span {
+        padding-left: 20px;
+      }
+    }
+
+  }
+
+  // sub-contentのカッコ
+
+  .info-area {
+    height: 117vw;
+
+    a {
+      color: $font-color;
+      display: block;
+      text-align: center;
+      margin-left: 6%;
+      margin-right:6%;
+      padding: 7%;
+      background-color: #F2EDE9;
+      border-radius: 20px;
+      border: 1px $font-color solid;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-left: 6%;
+    margin-right:6%;
+    margin-top: 7%;
+    margin-bottom: 8%;
+    
+    td {
+      width:41vw;
+      border: solid 1px $font-color;
+      font-family: $font-M;
+      font-weight: normal;
+      font-size: 1rem;
+      padding-left:8vw;
+      padding-top:5vw;
+      padding-bottom:5vw;
+      background-color: #fff;
+
+    }
+
+    td:nth-child(2n) {
+      width:59vw;
+    }
+  }
+
+  .background-img-page {
+    height: 226px;
+    margin-top: 44px;
+    background-image: url("images/iPhone/page-bg1.png");
+    background-size:90%;
+    background-position:center center;
+
+    h2 {
+      padding-top: 80px;
+      padding-left: 11%;
+      color: #fff;
+      font-weight: normal;
+      font-size: 9vw;
+    }
+  }
+
+}
+
+// singleのカッコ
